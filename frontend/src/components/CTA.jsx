@@ -11,7 +11,7 @@ const CTA = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch("http://localhost:8080/api/waitlist", {
+      const response = await fetch("https://memo-tag-backend.vercel.app/api/waitlist", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
