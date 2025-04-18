@@ -4,15 +4,15 @@ const cors = require("cors");
 const connectDB = require("./config/db");
 const apiRoutes = require("./routes/api");
 const path = require("path");
-const { fileURLToPath } = require("url");
 
 const app = express();
 
 // Connect Database
 connectDB();
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename); 
+const __filename = __filename; // Already available in CommonJS
+const __dirname = __dirname;
+
 
 const corsOptions = {
   origin: "https://memo-tag-frontend.vercel.app", // Specify the allowed origin
