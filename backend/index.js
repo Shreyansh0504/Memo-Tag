@@ -15,7 +15,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename); 
 
 const corsOptions = {
-  origin: "https://srijan-vestiq.vercel.app", // Specify the allowed origin
+  origin: "https://memo-tag-frontend.vercel.app", // Specify the allowed origin
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true, // Include credentials like cookies
 };
