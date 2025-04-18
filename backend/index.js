@@ -10,10 +10,6 @@ const app = express();
 // Connect Database
 connectDB();
 
-const __filename = __filename; // Already available in CommonJS
-const __dirname = __dirname;
-
-
 const corsOptions = {
   origin: "https://memo-tag-frontend.vercel.app", // Specify the allowed origin
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
